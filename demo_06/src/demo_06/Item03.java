@@ -64,11 +64,6 @@ public class Item03 implements Interface
 		
 			indi( num + " " + str );
 			
-			
-			
-		
-		
-		
 	}
 	
 	private String id;
