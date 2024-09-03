@@ -1,5 +1,10 @@
 package demo_06;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.Iterator;
 import java.util.function.Consumer;
 
 public class Item03 implements Interface
@@ -7,6 +12,62 @@ public class Item03 implements Interface
 	@Override
 	public void execute() {
 		indi( "Lambda" );
+		
+		ArrayList<String> animals = new ArrayList<String>( Arrays.asList( "Dog" ));
+		
+		ArrayList<String> animal = new ArrayList<String>();
+			animal.add( "Cat" );
+			animal.add( "Elephant" );
+			animal.add( "Lion" );
+			
+		String getAnimal = animal.get( 1 );
+			indi( getAnimal );
+			
+			animals.addAll( animal );
+			
+			animals.remove( 2 );
+			animals.set( 2, "Phoenix" );
+			
+		Comparator<String> compa = new Comparator<>() {
+			public int compare( String o1, String o2 ) {
+				return( o2.compareTo( o1 ));
+			}
+		};
+			
+		Collections.sort( animals, compa );
+			
+		Iterator<String> itera = animals.iterator();
+		while( itera.hasNext()) {
+			String hoge = itera.next();
+				indi( hoge );
+		}
+			
+		ArrayList<Integer> seq = new ArrayList<Integer>();
+		
+		for( int i = 0; i < 5; i++ ) {
+			int number = new java.util.Random().nextInt( 4 ) + 1;
+				seq.add( number );
+		}
+		
+		for( int i : seq ) {
+			char[] base = { ' ', 'A', 'G', 'T', 'C' };
+				System.out.print( base[ i ] );
+		}
+		indi( " " );
+		
+		int num = new java.util.Random().nextInt( 10 ) + 1;
+		
+		String str = ( ( num % 2 ) == 0 ) ? ( ( num % 3 ) == 0 ) ?
+								"true/true" : "true/false" 
+						:( ( num % 3 ) == 0 ) ?
+								"false/true" : "false/false" ;
+		
+			indi( num + " " + str );
+			
+			
+			
+		
+		
 		
 	}
 	
