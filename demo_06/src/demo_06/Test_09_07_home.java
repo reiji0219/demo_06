@@ -8,24 +8,10 @@ public class Test_09_07_home
 		calc.process( () -> {
 			System.out.println( "関心事を記述" );
 			
+			Interface save = Calc07.create();
+				save.execute();
+				
 		});
-		
-		Item07.save( item -> {
-			item.id( "掛け算" )
-				  .name( "税込み価格" )
-				  .price( 980 )
-				  .tax( 1.1 )
-				  .calc( calc );
-			
-			System.out.println( "計算式 :" + item.getId());
-			
-			item.display();
-		});
-		
-		
-		
-		
-		
 		
 	}
 }
