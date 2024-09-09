@@ -1,15 +1,14 @@
 package demo_06;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.Iterator;
 import java.util.function.Consumer;
 
 public class Item09 implements Interface 
-{
-	@Override
-	public void execute() {
-		indi( "Lambda" );
-		
-	}
-	
+{	
 	private String id;
 	private String name;
 	private double price;
@@ -36,8 +35,6 @@ public class Item09 implements Interface
 		this.calc = calc;
 		return this;
 	}
-	
-	
 	public static void save( Consumer<Item09> con ) {
 		Item09 item = new Item09();
 		con.accept(item);
@@ -56,13 +53,67 @@ public class Item09 implements Interface
 
 		calc.display();
 	}
-			
-	
+
+	@Override
+	public void execute() {
+		indi( "Lambda" );
+		
+		 ArrayList<String> animals = new ArrayList<String>( Arrays.asList( "Dog" ));
+		 
+		 ArrayList<String> animal = new ArrayList<String>();
+		 	animal.add( "Cat" );
+		 	animal.add( "Lion" );
+		 	animal.add( "Elephant" );
+		 
+		 String getAnimal = animal.get( 2 );
+		 	indi( getAnimal );
+		 	
+		 	animals.addAll( animal );
+		 	
+		 	animals.set( 2, "Fox" );
+		 	animals.remove( 0 );
+		 	animals.add( 0, "Phoenix" );
+		 	
+		 Comparator<String> compa = new Comparator<>() {
+			 public int compare( String o1, String o2 ) {
+				 return( o2.compareTo( o1 ));
+			 }
+		 };
+		 	
+		 Collections.sort( animals, compa );
+		 	
+		 Iterator<String> itera = animals.iterator();
+		 while( itera.hasNext()) {
+			 String hoge = itera.next();
+			 	indi( hoge );
+		 }
+		 
+		 ArrayList<Integer> seq = new ArrayList<Integer>();
+		 
+		 for( int i = 0; i < 5; i++ ) {
+			 int number = new java.util.Random().nextInt( 4 ) + 1;
+			 	seq.add( number );
+		 }
+		 
+		for( int i : seq ) {
+			 char[] base = { ' ', 'A', 'G', 'C', 'T' };
+			 	System.out.print( base[ i ] ); 
+		 }
+		 indi( " " );
+		 
+		 int num = new java.util.Random().nextInt( 10 ) + 1;
+		 
+		 String str = ( ( num % 2 ) == 0 ) ? ( ( num % 3 ) == 0 ) ? 
+				 				"true/true" : "true/false"
+				 		:( ( num % 3 ) == 0 ) ? 
+				 				"false/true" : "false/false" ;
+		 	indi( num + " " + str );
+		 
+	}
+
 	public static double calcTax( double price, double tax ) {
 		return( price * tax );
 	}
-	
-
 	@Override
 	public String toString() {
 		return "Item09 [id=" + id + ", name=" + name + ", price=" + price + ", tax=" + tax + "]";
@@ -70,6 +121,4 @@ public class Item09 implements Interface
 	public static void indi( String s0 ) {
 		System.out.println( s0 ); 
 	}
-	
-	
 }
