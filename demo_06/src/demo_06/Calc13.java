@@ -26,7 +26,6 @@ public class Calc13 extends Item13
 
 				item.execute();
 			});
-
 		};
 	}
 	
@@ -42,6 +41,4 @@ public class Calc13 extends Item13
 		
 		indi( "end" );
 	}
-	
-	
 }
