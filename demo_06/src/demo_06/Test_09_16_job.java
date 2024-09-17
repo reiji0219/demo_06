@@ -9,11 +9,9 @@ public class Test_09_16_job
 
     		Interface save = Calc16.create();
     			save.execute();
-    			
-    			
-    			
+    		
+    		
     	});
-    	
-     	
+    
     }
 }
