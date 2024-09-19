@@ -4,14 +4,13 @@ public class Test_09_15_home
 {
 	public static void main( String[] args )
 	{
-		Item15.save( item -> {
-			item.id( "掛け算" )
-				  .name( "税込み価格" )
-				  .price( 980 )
-				  .tax( 1.1 );
-			
+		Calc15 calc = new Calc15( "Poly-morphism" );
+		calc.process( () -> {
+			System.out.println( "関心事を記述" );
+	
+			Interface save = Calc15.create();
+				save.execute();
 			
 		});
-		
 	}
 }

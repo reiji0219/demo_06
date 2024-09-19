@@ -1,4 +1,6 @@
-package demo_06;
+package demo_06_under;
+
+import demo_06.Interface;
 
 public class Test_09_17_home 
 {

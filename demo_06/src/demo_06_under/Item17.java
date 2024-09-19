@@ -1,6 +1,8 @@
-package demo_06;
+package demo_06_under;
 
 import java.util.function.Consumer;
+
+import demo_06.Interface;
 
 public class Item17 implements Interface
 {

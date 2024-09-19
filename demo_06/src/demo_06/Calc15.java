@@ -1,34 +1,31 @@
-package demo_06_under;
+package demo_06;
 
-import demo_06.Interface;
-
-public class Calc18 extends Item18
+public class Calc15 extends Item15
 {
 	private String name;
 	
-	public Calc18( String name ) {
+	public Calc15( String name ) {
 		super();
 		this.name = name;
 	}
 	
 	public static Interface create() {
 		return() -> {
-			Calc18 calc = new Calc18( "Poly-morphism" );
+			Calc15 calc = new Calc15( "Poly-morphism" );
 
-			Item18.save( item -> {
+			Item15.save( item -> {
 				item.id( "掛け算" )
 					  .name( "税込み価格" )
 					  .price( 980 )
 					  .tax( 1.1 )
-					  .calc( calc ); 
-				
+					  .calc( calc );
 				
 				System.out.println( "計算式 :" + item.getId());
 				
 				item.display();
 				
-			});	
-
+				item.execute();
+			});
 		};
 	}
 	
@@ -43,5 +40,5 @@ public class Calc18 extends Item18
 		inter.execute();
 		
 		indi( "end" );
-	}	
+	}
 }

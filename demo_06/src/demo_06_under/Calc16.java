@@ -1,4 +1,6 @@
-package demo_06;
+package demo_06_under;
+
+import demo_06.Interface;
 
 public class Calc16 extends Item16
 {
