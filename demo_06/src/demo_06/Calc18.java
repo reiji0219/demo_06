@@ -20,6 +20,7 @@ public class Calc18 extends Item18
 					  .tax( 1.1 )
 					  .calc( calc ); 
 				
+				
 				System.out.println( "計算式 :" + item.getId());
 				
 				item.display();
