@@ -12,6 +12,7 @@ public class Test_09_22_home
 			Interface save = Calc22.create();
 				save.execute();
 			
+				
 		});
 		
 	}
