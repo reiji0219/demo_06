@@ -14,8 +14,6 @@ public class Test_09_19_job
 				save.execute();
 			
 		});
-	
-		
 	}
 
 }
