@@ -4,7 +4,6 @@ import demo_06.Interface;
 
 public class Test_09_21_job 
 {
-
 	public static void main( String[] args )
 	{
 	Calc21 calc = new Calc21( "Poly-morphism" );
@@ -16,7 +15,5 @@ public class Test_09_21_job
 
 		});
 
-
-
-		}
+	}
 }	
