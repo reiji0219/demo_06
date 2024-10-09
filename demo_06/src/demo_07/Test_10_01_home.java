@@ -2,7 +2,7 @@ package demo_07;
 
 import demo_06.Interface;
 
-public class Test1_10_01_home 
+public class Test_10_01_home 
 {
 	public static void main( String[] args )
 	{
