@@ -13,9 +13,6 @@ public class Test_10_07_home
 			Interface save = Calc07.create();
 				save.execute();
 			
-		});
-		
-		
+		});	
 	}
-	
 }
