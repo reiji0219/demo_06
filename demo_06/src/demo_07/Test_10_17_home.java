@@ -12,10 +12,7 @@ public class Test_10_17_home
 	
 	      Interface save = Calc17.create();
 	        save.execute();
-
-
+	        
     });
-
   } 
 }
-
