@@ -1,14 +1,13 @@
-package demo_06_under;
+package demo_07;
 
 import java.util.function.Consumer;
 
 import demo_06.Interface;
 
-public class Item20 implements Interface 
-{
+public class Item10 implements Interface {
 	@Override
 	public void execute() {
-		indi( "Lambda" );
+		indi("Lambda");
 
 	}
 
@@ -16,35 +15,35 @@ public class Item20 implements Interface
 	private String name;
 	private double price;
 	private double tax;
-	private Calc20 calc;
+	private Calc10 calc;
 
-	public Item20 id(String id) {
+	public Item10 id(String id) {
 		this.id = id;
 		return this;
 	}
 
-	public Item20 name(String name) {
+	public Item10 name(String name) {
 		this.name = name;
 		return this;
 	}
 
-	public Item20 price(double price) {
+	public Item10 price(double price) {
 		this.price = price;
 		return this;
 	}
 
-	public Item20 tax(double tax) {
+	public Item10 tax(double tax) {
 		this.tax = tax;
 		return this;
 	}
 
-	public Item20 calc(Calc20 calc) {
+	public Item10 calc(Calc10 calc) {
 		this.calc = calc;
 		return this;
 	}
 
-	public static void save(Consumer<Item20> con) {
-		Item20 item = new Item20();
+	public static void save(Consumer<Item10> con) {
+		Item10 item = new Item10();
 		con.accept(item);
 		indi("save :" + item);
 	}
@@ -68,10 +67,11 @@ public class Item20 implements Interface
 
 	@Override
 	public String toString() {
-		return "Item20 [id=" + id + ", name=" + name + ", price=" + price + ", tax=" + tax + ", calc=" + calc + "]";
+		return ("Item10 :" + "id=" + id + " " + "name=" + name + " " + "price=" + price + " " + "tax=" + tax);
 	}
 
 	public static void indi(String s0) {
 		System.out.println(s0);
 	}
+
 }
