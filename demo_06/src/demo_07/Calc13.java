@@ -21,6 +21,8 @@ public class Calc13 extends Item13
 				System.out.println("計算式 :" + item.getId());
 
 				item.display();
+				
+				item.execute();
 
 			});
 		};
