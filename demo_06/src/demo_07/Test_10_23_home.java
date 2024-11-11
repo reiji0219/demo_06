@@ -6,11 +6,11 @@ public class Test_10_23_home
 {
 	public static void main(String[] args) 
 	{
-		Calc08 calc = new Calc08("Poly-morphism");
+		Calc23 calc = new Calc23("Poly-morphism");
 		calc.process(() -> {
 			System.out.println("関心事を記述");
 
-			Interface save = Calc08.create();
+			Interface save = Calc23.create();
 			save.execute();
 		});
 	}
