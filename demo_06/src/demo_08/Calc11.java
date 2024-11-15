@@ -15,7 +15,11 @@ public class Calc11 extends Item11 {
 			Calc11 calc = new Calc11("Poly-morphism");
 
 			Item11.save(item -> {
-				item.id("掛け算").name("税込み価格").price(980).tax(1.1).calc(calc);
+				item.id("掛け算")
+					  .name("税込み価格")
+					  .price(980)
+					  .tax(1.1)
+					  .calc(calc);
 
 				System.out.println("計算式 :" + item.getId());
 
