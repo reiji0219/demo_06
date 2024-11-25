@@ -2,20 +2,20 @@ package demo_08;
 
 import demo_06.Interface;
 
-public class Calc24j extends Item24j
+public class Calc24 extends Item24
 {
 	private String name;
 
-	public Calc24j(String name) {
+	public Calc24(String name) {
 		super();
 		this.name = name;
 	}
 
 	public static Interface create() {
 		return () -> {
-			Calc24j calc = new Calc24j("Poly-morphism");
+			Calc24 calc = new Calc24("Poly-morphism");
 
-			Item24j.save(item -> {
+			Item24.save(item -> {
 				item.id("掛け算")
 					  .name("税込み価格")
 					  .price(980)

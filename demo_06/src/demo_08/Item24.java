@@ -3,7 +3,7 @@ package demo_08;
 import java.util.function.Consumer;
 import demo_06.Interface;
 
-public class Item24j implements Interface 
+public class Item24 implements Interface 
 {
 	@Override
 	public void execute() {
@@ -15,35 +15,35 @@ public class Item24j implements Interface
 	private String name;
 	private double price;
 	private double tax;
-	private Calc24j calc;
+	private Calc24 calc;
 
-	public Item24j id(String id) {
+	public Item24 id(String id) {
 		this.id = id;
 		return this;
 	}
 
-	public Item24j name(String name) {
+	public Item24 name(String name) {
 		this.name = name;
 		return this;
 	}
 
-	public Item24j price(double price) {
+	public Item24 price(double price) {
 		this.price = price;
 		return this;
 	}
 
-	public Item24j tax(double tax) {
+	public Item24 tax(double tax) {
 		this.tax = tax;
 		return this;
 	}
 
-	public Item24j calc(Calc24j calc) {
+	public Item24 calc(Calc24 calc) {
 		this.calc = calc;
 		return this;
 	}
 
-	public static void save(Consumer<Item24j> con) {
-		Item24j item = new Item24j();
+	public static void save(Consumer<Item24> con) {
+		Item24 item = new Item24();
 		con.accept(item);
 		indi("save :" + item);
 	}
