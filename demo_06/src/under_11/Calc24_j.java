@@ -1,12 +1,11 @@
-package demo_08;
+package under_11;
 
 import demo_06.Interface;
 
-public class Calc24 extends Item24
-{
+public class Calc24_j extends Item24 {
 	private String name;
 
-	public Calc24(String name) {
+	public Calc24_j(String name) {
 		super();
 		this.name = name;
 	}
@@ -25,7 +24,6 @@ public class Calc24 extends Item24
 				System.out.println("計算式 :" + item.getId());
 
 				item.display();
-
 			});
 		};
 	}
