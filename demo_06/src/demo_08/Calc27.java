@@ -36,7 +36,7 @@ public class Calc27 extends Item27 {
 	}
 
 	public void process(Interface inter) {
-		indi("name");
+		indi("start");
 
 		inter.execute();
 

@@ -11,7 +11,7 @@ public class Test_11_27_home
 			System.out.println("関心事を記述");
 
 			Interface save = Calc27.create();
-			save.execute();
+				save.execute();
 		});
 	}
 }
