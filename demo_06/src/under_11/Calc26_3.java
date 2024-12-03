@@ -1,21 +1,20 @@
-package demo_08;
+package under_11;
 
 import demo_06.Interface;
 
-public class Calc26 extends Item26 
-{
+public class Calc26_3 extends Item26 {
 	private String name;
 
-	public Calc26(String name) {
+	public Calc26_3(String name) {
 		super();
 		this.name = name;
 	}
 
 	public static Interface create() {
 		return () -> {
-			Calc26 calc = new Calc26("Poly-morphism");
+			Calc26_3 calc = new Calc26_3("Poly-morphism");
 
-			Item26.save(item -> {
+			Item26_3.save(item -> {
 				item.id("掛け算")
 					  .name("税込み価格")
 					  .price(980)

@@ -1,17 +1,16 @@
-package demo_08;
+package under_11;
 
 import demo_06.Interface;
-import under_11.Calc21_h;
 
-public class Test_11_26_home 
+public class Test_11_25_job 
 {
 	public static void main(String[] args) 
 	{
-		Calc26 calc = new Calc26("Poly-morphism");
+		Calc25 calc = new Calc25("Poly-morphism");
 		calc.process(() -> {
 			System.out.println("関心事を記述");
 
-			Interface save = Calc21_h.create();
+			Interface save = Calc25.create();
 			save.execute();
 
 		});
