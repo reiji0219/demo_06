@@ -8,6 +8,7 @@ public class Test_12_05_home
 	{
 		Calc05h calc = new Calc05h("Poly-mprphism");
 		calc.process(() -> {
+			System.out.println( "関心事を記述" );
 
 			Interface save = Calc05h.create();
 			save.execute();
