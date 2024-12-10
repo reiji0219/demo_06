@@ -2,25 +2,25 @@ package demo_08;
 
 import demo_06.Interface;
 
-public class Calc10_h extends Item10_h
+public class Calc10_job extends Item10_job
 {
   private String name;
 
-  public Calc10_h( String name ){
+  public Calc10_job( String name ){
     super();
     this.name = name;
   }
 
   public static Interface create(){
     return() -> {
-      Calc10_h calc = new Calc10_h( "Poly-morphism" );
+      Calc10_job calc = new Calc10_job( "Poly-morphism" );
 
-      Item10_h.save( item -> {
+      Item10_job.save( item -> {
         item.id( "掛け算" )
-              .name( "税込み価格" )
-              .price( 980 )
-              .tax( 1.1 )
-              .calc( calc );
+            .name( "税込み価格" )
+            .price( 980 )
+            .tax( 1.1 )
+            .calc( calc );
 
         System.out.println( "計算式 :" + item.getId());
 
