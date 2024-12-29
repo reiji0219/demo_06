@@ -1,11 +1,11 @@
-package demo_06;
+package testCode;
 //うるう年の判断ロジック( Junitを使用してテストコードを作成 )
 
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-import testCode.LeapYear;
+import leapYear.LeapYear;
 
 class JunitTest 
 {  // どのソースをテストするか定義しローカル変数( leapYear )も定義する。
