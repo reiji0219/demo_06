@@ -4,8 +4,8 @@ package demo_06;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-import demo_08.LeapYear;
-//import org.junit.jupiter.api.Disabled;   @Disabled(無効化)を入れる為に必要
+
+import testCode.LeapYear;
 
 class JunitTest 
 {  // どのソースをテストするか定義しローカル変数( leapYear )も定義する。
